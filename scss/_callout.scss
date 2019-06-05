@@ -1,0 +1,28 @@
+// Callout
+.callout {
+  padding: 15rem 0;
+  background: linear-gradient(90deg, fade-out($white, 0.9) 0%, fade-out($white, 0.9) 100%), url('../img/bg-callout.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h2 {
+    font-size: 2.5rem;
+    color:$titles
+    // font-weight: 700;
+    // display: block;
+    // max-width: 30rem;
+  }
+
+
+  .cards{
+    padding: 2rem;
+    background-color:rgba(250,250,250,0.4);
+    @media(max-width: 768px) {
+     margin-left: 0 !important;
+     width: 90%;
+     }
+     li{
+       line-height: 1.3;
+     }
+   }
+}

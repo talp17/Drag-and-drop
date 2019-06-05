@@ -1,0 +1,11 @@
+footer.footer {
+background-color: $primary;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+.logo{
+  width:30%;
+  @media(max-width: 768px) {
+    width:60%;
+  }
+}
+}

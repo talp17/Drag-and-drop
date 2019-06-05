@@ -1,0 +1,138 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+@include font-face;
+
+
+body {
+  font-family: 'PoalimSans-Light';
+  line-height: 1.1;
+}
+
+// Custom Button Size
+.btn-xl {
+  padding: 1rem 2.5rem;
+}
+
+
+// Content Section
+.content-section {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.content-section-heading {
+  h2 {
+    font-size: 3.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+}
+
+// Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "PoalimSans-Medium";
+}
+h1{
+  color:$titles;
+}
+
+p,ul,li,a,div{
+  font-size: 24px ;
+
+  @media(max-width: 768px){
+    font-size: 20px;
+  }
+  @media(max-width: 576px){
+    font-size: 18px;
+  }
+
+}
+
+.text-faded {
+  color: fade-out($white, 0.3);
+}
+
+
+
+// Scroll to top button
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+
+  display: none;
+
+  width: 50px;
+  height: 50px;
+
+  text-align: center;
+
+  color: white;
+  background: fade-out($gray-800, .5);
+
+  line-height: 45px;
+  &:focus,
+  &:hover {
+    color: white;
+  }
+  &:hover {
+    background: $gray-800;
+  }
+  i {
+    font-weight: 800;
+  }
+}
+
+
+.fa-info-circle:hover{
+  color:$secondary;
+  cursor: pointer;
+}
+
+
+.alert-danger{
+  border: none;
+}
+.icons{
+  width: 70%;
+  margin-top: -10%;
+}
+
+
+@media(min-width: 576px){
+  .modal-dialog{
+    max-width: 90%;
+  }
+}
+
+
+
+#myModal{
+  .modal-dialog{
+    width: 50%;
+    @media(max-width: 768px){
+      width:90%;
+    }
+  }
+}
+
+.btn-secondary{
+  background-image: linear-gradient(to bottom left,#bf214c,#eb1c24, #ff4800) !important;
+  color: white;
+  font-size: 24px;
+  padding: .3rem 2rem .6rem 2rem;
+  border: none;
+}
+
+
